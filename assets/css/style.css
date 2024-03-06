@@ -1,7 +1,7 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap')
 
-/* Aesterisk wilcard selector to override default styles added by the browser */
+/* Asterisk wilcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
@@ -72,7 +72,7 @@ nav {
     top: 100%;
 }
 
-/* Nav Toggle */
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -87,14 +87,14 @@ nav {
 
 /* Main content */
 main {
-    /* Make main element take up any surplus space to push down footer */
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
-/* Hero section styles */
+/* Hero section */
 #hero {
-    height: 600%;
+    height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
@@ -103,17 +103,17 @@ main {
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, .7);
-    font: 130%;
+    font-size: 130%;
     position: absolute;
     bottom: 30px;
     width: 80%;
-    min-height: 200%;
+    min-height: 200px;
     padding-top: 40px;
-    padding-left: 10%;
+    padding-left: 10px;
 }
 
-#cover-text >h2, 
-#cover-text > h3 {
+#cover-text>h2, 
+#cover-text>h3 {
     color: #ffffff;
 }
 
@@ -129,8 +129,8 @@ main {
     font-size: 280%;
 }
 
-#benefits-physical > div,
-#benefits-mental > div {
+#benefits-physical>div,
+#benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -170,7 +170,7 @@ main {
     list-style-type: none;
 }
 
-#social-network i {
+#social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
@@ -192,7 +192,7 @@ main {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -225,16 +225,16 @@ main {
         flex-direction: column;
         width: 100%;
     }
-    #benefits-physical > div,
-    #benefits-mental > div {
+    #benefits-physical>div,
+    #benefits-mental>div {
         width: 75%;
     }
-    #benefits-mental > div {
+    #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
     }
 }
-    /* Larger devices (laptops and desktops, 992px and up) */
+    /* Large devices (laptops and desktops, 992px and up) */
     @media screen and (min-width: 992px) {
         #menu a:hover {
             border-bottom: 1px solid #3a3a3a;
